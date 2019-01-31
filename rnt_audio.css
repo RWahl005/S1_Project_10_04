@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 4
+
+   Roads Not Taken Audio Styles
+   Author: Ryan Wahl
+   Date:   1.31.19
+
+   Filename: rnt_audio.css
+
+*/
+
+/* Audio Styles */
+/* The audio styles */
+audio {
+    /* Sets a display of block for the audio element */
+    display: block;
+    /* Adds in a dark gray box shadow with horizontal and vertical offsets of 8 pixels. A blur of 15 pixels. */
+    box-shadow: 8px 8px 15px rgb(143, 143, 143);
+    /* Sets the top/bottom margion to 20px and the left/right to auto so it is centered. */
+    margin: 20px auto;
+    /* Sets the width of it to 80%. */
+    width: 80%;
+}
+
+/* Sets the audio background panel to blue. (Only works on webkit browsers) */
+audio::-webkit-media-controls-panel {
+    background-color: rgb(128, 128, 255);
+}
+
+/* 
+    The following styles are added it so it matches the picture.
+    The majority of these fixes only work on chrome.
+*/
+audio {
+    /* Removes the box around the audio display. */
+    border-radius: 30px;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    /* Sets the time text to white. */
+    color: white;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    /* Sets the time text to white. */
+    color: white;
+}
